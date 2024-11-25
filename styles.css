@@ -1,0 +1,558 @@
+/*
+.container{
+  width: 100%;
+  height: 600px;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+  }
+  */
+
+  .card1 {
+    background-color: blue;
+  }
+  
+  .card2 {
+    background-color: aqua;
+  }
+  
+  .card3 {
+    background-color: blanchedalmond;
+  }
+  
+  .card4 {
+    background-color: brown;
+  }
+  
+  .card5 {
+    background-color: beige;
+  }
+  
+  .card6 {
+    background-color: cadetblue;
+  }
+  
+  .card7 {
+    background-color: chartreuse;
+  }
+  
+  .card8 {
+    background-color: azure;
+  }
+  
+  .cartas {
+    height: 400px;
+    width: auto;
+  }
+  
+  .swiper-container {
+    position: relative;
+  }
+  
+  /* Estilos para centrar verticalmente el botón de navegación "prev" */
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  
+  /* Posiciones izquierda y derecha para cada botón */
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  /* Estilo general para las tarjetas */
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    max-width: 250px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .badge {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .price {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .current-price {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .discount {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .add-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .add-button:hover {
+    background-color: #333;
+  }
+  
+  .swiper-container {
+    overflow: hidden;
+    padding: 0 35px;
+    width: auto;
+  }
+  
+  .swiper-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+  }
+  
+  .swiper-container {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    max-width: 250px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    border: 1px solid black;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nuevo {
+    font-weight: bold;
+    color: gray;
+}
+  
+  /* ------------------------ NAVBAR --------------------- */
+  .navbar {
+    background-color: #f0f4f7;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar-brand {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  /* Color de texto en el navbar y efecto de subrayado en hover */
+  .navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: #d2691e;
+  }
+  
+  /* Línea de subrayado en hover */
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, violet, orange);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover::after,
+  .navbar .nav-link.active::after {
+    opacity: 1;
+  }
+  
+  /* Ajustes responsivos para el navbar */
+  @media (max-width: 992px) {
+    .navbar .nav-link {
+      color: #333;
+      padding: 10px 15px;
+      display: block;
+      text-align: center;
+    }
+  
+    .navbar .nav-link::after {
+      display: none;
+    }
+  
+    /* Ajusta el contenedor para evitar espacios laterales en móviles */
+    .navbar .container-fluid {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  .navbar-border {
+    background: linear-gradient(to right, violet, orange);
+    height: 3px;
+  }
+  
+  .navbar .form-control {
+    border-radius: 10px;
+  }
+  
+  .navbar .btn-outline-secondary {
+    border-radius: 50%;
+  }
+  
+  .btn-outline-secondary .bi-cart {
+    font-size: 1.2em;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  footer .navbar-brand {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #ff6b6b;
+  }
+  
+  .footer-line {
+    height: 40px;
+    background: linear-gradient(to right, violet, orange);
+    margin: 10px 0;
+  }
+  
+  footer i {
+    font-size: 1.2em;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer .bg-dark {
+    background-color: #000;
+  }
+  
+  /* Logo adjustments */
+  .c-size-logo {
+    width: 100px;
+    height: auto;
+  }
+
+  /*Carousel*/
+  .carousel-margin-top{
+    margin-top: 80px;
+  }
+
+  /*Eslogan ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+  
+
+.eslogan-text {
+    font-size: 2rem; /* Tamaño de letra grande */
+    color: #333; /* Color oscuro para resaltar el texto */
+    font-weight: bold; /* Hacer el texto más fuerte visualmente */
+    text-transform: uppercase; /* Poner el texto en mayúsculas para más impacto */
+    letter-spacing: 2px; /* Separar un poco las letras */
+}
+
+.eslogan-container {
+    text-align: center;
+    background-color: #f8f9fa; /* Mantén el fondo suave si lo deseas */
+    padding: 25px 0; /* Espaciado alrededor del eslogan */
+    margin: 0 0; /* Separación entre el carousel y las imágenes */
+    /* Elimina las siguientes líneas para quitar los bordes */
+    /* border-top: 2px solid #dedede; */
+    /* border-bottom: 2px solid #dedede; */
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+/*Cards sobre el navbar */
+
+/* Estilo para las tarjetas nuevas, aumentando su tamaño */
+.larger-card .card {
+  max-width: 300px; /* Aumenta el ancho máximo */
+  padding: 20px; /* Aumenta el padding si quieres */
+  transform: scale(1.1); /* Aumenta el tamaño */
+}
+
+/* Opcional: agrega un tamaño de fuente mayor para el título */
+.larger-card .card-title {
+  font-size: 1.2rem;
+}
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+/* CSS de Vista de contactenos */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.contact-section {
+  position: relative;
+  background-image: url(../img/fondoscontactenos/fondo1.jpg); /* Cambia la ruta a la imagen de fondo que desees */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  margin-top:84px;
+  margin-bottom: -30px;
+  padding: 40px 20px;
+  max-width: 100%;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Crea una capa semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.contact-info i {
+  color: #ffc107;
+  margin-right: 8px;
+}
+
+.contact-info a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 15px;
+}
+
+.social-media a {
+  font-size: 24px;
+  color: #ffc107;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #bbbbbb;
+  text-align: center;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/* SWIPER JS en index */
+.marginTop{
+  margin-top:10px;
+  margin-bottom:0px !important;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/* Modificaicones en Footer */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+footer .bi {
+  font-size: 2rem;
+  margin-right: 10px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+footer .bi:hover {
+  transform: scale(1.2);
+  color: #ffc107;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer small {
+  font-size: 1rem;
+}
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/* Boton de wsp flotante */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* .new-whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.new-whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #1EBE56;
+}
+
+/* Estilo para el icono de WhatsApp */
+/* .new-whatsapp-button i {
+  color: white;
+} */ */
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/* Boton de wsp flotante 2 */
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebea5;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
